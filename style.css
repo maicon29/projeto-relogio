@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family= Libre+Baskerville & display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family:'Libre Baskerville' , sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     height: 100vh;
     background: linear-gradient(120deg, #711fbe, #fcfcfc) ;
+    background-position: center center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 550px;
+    width: 500px;
     height: 200px;
     background: transparent;
     border-radius: 5px;
@@ -34,7 +34,7 @@ body {
     background: rgb(5, 5, 5, .9);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
     box-shadow: 3px 3px 3px;
-     border-radius: 5px;
+    border-radius: 5px;
     letter-spacing: 2px;
 }
 .relogio span {
@@ -43,4 +43,30 @@ body {
 }
 .relogio span.tempo {
     font-size: 10px;
+}
+
+@media (max-width: 400px) {
+    body {
+        background: linear-gradient(120deg, #0a0a0a, #aca6a6) ;
+       
+    }
+    .relogio {
+        width: 250px;
+        height: 70px;
+        padding: 10px;
+    }
+    .relogio div{
+        height:50px;
+        width:60px;
+      
+    }
+    .relogio span {
+        font-weight: bolder;
+        font-size: 10px;
+        color: red;
+    }
+    .relogio span.tempo {
+        font-size: 7px;
+    }
+
 }
