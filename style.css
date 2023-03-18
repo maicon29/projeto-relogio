@@ -45,7 +45,7 @@ body {
     font-size: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width:550px) {
     body {
         background: linear-gradient(120deg, #0a0a0a, #aca6a6) ;
        
